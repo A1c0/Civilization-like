@@ -1,0 +1,35 @@
+{
+  "name": "TP-Batman",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/alexConts/Civilization-like.git",
+  "author": "alexConts <alexandrecontassot@hotmail.fr>",
+  "license": "MIT",
+  "xo": {
+    "envs": [
+      "node",
+      "mocha"
+    ],
+    "space": 2,
+    "rules": {
+      "max-len": [
+        "error",
+        80,
+        2
+      ]
+    }
+  },
+  "dependencies": {
+    "chai": "^4.1.2",
+    "chai-as-promised": "^7.1.1",
+    "chalk": "^2.4.1",
+    "mocha": "^5.1.1",
+    "moment": "^2.22.1",
+    "winston": "^2.4.2",
+    "xo": "^0.20.3"
+  },
+  "devDependencies": {
+    "dotenv": "^5.0.1",
+    "sinon": "^5.0.3"
+  }
+}
