@@ -18,6 +18,10 @@ class Units {
     return this.dead_;
   }
 
+  set defensing(value) {
+    this.defensing_ = value;
+  }
+
   bioDeath() {
     setTimeout(() => {
       this.dead_ = true;

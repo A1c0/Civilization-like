@@ -35,12 +35,89 @@ class Polis {
     });
   }
 
-  doCommerceWith(otherPolis, cornSended, goldSended){
-    return new Promise((resolve,reject) => {
-      const travelDuration = this.position_.getDistance(otherPolis.position);
-      const cornGain = cornSended * (1 + 0.1* travelDuration);
-      const goldGain = goldSended * (1 + 0.1* travelDuration);
+  doCommerceWith(otherPolis, cornSended, goldSended) {
+    return new Promise((resolve, reject) => {
+      if (cornSended <= this.corn_ && goldSended <= this.gold_) {
+        this.corn_ -= cornSended;
+        this.gold_ -= goldSended;
+        const travelDuration = Math.floor(this.position_.getDistance(
+          otherPolis.position) * 2);
+        let cornGain = cornSended * (1 + (0.1 * travelDuration));
+        let goldGain = goldSended * (1 + (0.1 * travelDuration));
+        let counter = 0;
+        const timeTravel = setInterval(() => {
+          if (Math.random() <= 0.05) { // 1 chance sur 20 de se faire detrousser
+            cornGain = 0;
+            goldGain = 0;
+            clearInterval(timeTravel);
+            resolve();
+          } else {
+            counter++;
+            if (counter === travelDuration) {
+              // Le voyage est terminé et s'est bien passé
+              this.corn_ += cornGain;
+              this.gold_ += goldGain;
+              clearInterval(timeTravel);
+              resolve();
+            }
+          }
+        }, Number(process.env.TIME_FACTOR));
+      } else {
+        reject(new Error(`Pas assez de ressource pour faire ce commerce`));
+      }
     });
+  }
+
+  setDefenseTroop(nbLightSoldier, nbHeavySoldier, nbRider) {
+    return new Promise((resolve, reject) => {
+      let counterLightSoldier = 0;
+      let counterHeavySoldier = 0;
+      let counterRider = 0;
+      this.unitList_.forEach(unit => {
+        if (unit instanceof LightSoldier) {
+          counterLightSoldier++;
+        }
+        if (unit instanceof HeavySoldier) {
+          counterHeavySoldier++;
+        }
+        if (unit instanceof Rider) {
+          counterRider++;
+        }
+      });
+      if (counterLightSoldier >= nbLightSoldier && counterHeavySoldier >=
+        nbHeavySoldier && counterRider >= nbRider) {
+        counterLightSoldier = 0;
+        counterHeavySoldier = 0;
+        counterRider = 0;
+
+        this.unitList_.forEach(unit => {
+          if (unit instanceof LightSoldier) {
+            if (counterLightSoldier < nbLightSoldier) {
+              unit.defensing = true;
+              counterLightSoldier++;
+            }
+          }
+          if (unit instanceof HeavySoldier) {
+            if (counterHeavySoldier < nbHeavySoldier) {
+              unit.defensing = true;
+              counterHeavySoldier++;
+            }
+          }
+          if (unit instanceof Rider) {
+            if (counterRider < nbRider) {
+              unit.defensing = true;
+              counterRider++;
+            }
+          }
+        });
+      } else {
+        reject(new Error('Pas assez de troupe pour envoyer cette attaque'));
+      }
+    });
+  }
+
+  attackOtherPolis(otherPolis) {
+
   }
 
   createLightSoldier() {

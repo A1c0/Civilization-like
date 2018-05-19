@@ -21,8 +21,7 @@ describe('divinity.js', () => {
     });
 
     after(() => {
-      stub.restore(
-      );
+      stub.restore();
       g.endWorld();
     });
 
