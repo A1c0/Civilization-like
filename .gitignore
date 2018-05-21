@@ -118,3 +118,4 @@ typings/
 Supprimerait .gitignore
 Supprimerait .idea/inspectionProfiles/
 Supprimerait .idea/vcs.xml
+Supprimerait test.js

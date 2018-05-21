@@ -1,4 +1,5 @@
 # TP : Civilization-like #
+[![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/xojs/xo)
 
 ## Welcome to the project page for our civ-like game ##
 
@@ -9,16 +10,21 @@
 
 ### **Summary** ###
 
-
-1. Goal
-2. Setup Guide
-    1. Dependencies
-    2. Environment variables
-3. Gameplay
+1. [Goal][Goal]
+2. [Setup Guide][Setup]
+    a. [Dependencies][Dependencies]
+    b. [Environment variables][Environment]
+3. [Gameplay][Gameplay]
+    a. [Divinity][Divinity]
+    b. [Polis][Environment]
+    c. [Divinity][Divinity]
+    d. [Environment variables][Environment]
+    e. [Divinity][Divinity]
+    f. [Environment variables][Environment]
 4. Tips
 5. What's next ?
 
-### 1 - Goal ###
+### 1 - Goal
 
 The game should consist in a solo mode. the player controls a city in ancient Greece. Each city is linked to a Divinity and has three main ressources :
 ##
@@ -34,21 +40,21 @@ On the other hand, your god might treat you with contempt, and a **Retribution**
 
 If you fail to please your god, it will wrath the earth.
 
-### 2 - Setup Guide ###
+### 2 - Setup Guide
 
-    ## a - Dependencies : ##
+    ## a - Dependencies :
         the following dependencies are used. They can be installed by using yarn or npm :
     *In progress*
     
-    ## b - Environment variables ##
+    ## b - Environment variables
         The program uses dotenv, and need an *.env* file at the root of the project. Here is an exemple :
         *In Progress*
         
-### 3 - Gameplay ###
+### 3 - Gameplay
 
 *In Progress*
 
-### 4 - Tips ###
+### 4 - Tips
 
 *In Progress*
 

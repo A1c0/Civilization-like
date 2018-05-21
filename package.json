@@ -5,6 +5,10 @@
   "repository": "https://github.com/alexConts/Civilization-like.git",
   "author": "alexConts <alexandrecontassot@hotmail.fr>",
   "license": "MIT",
+  "scripts": {
+    "start": "node game.js",
+    "test": "mocha"
+  },
   "xo": {
     "envs": [
       "node",
@@ -23,8 +27,12 @@
     "chai": "^4.1.2",
     "chai-as-promised": "^7.1.1",
     "chalk": "^2.4.1",
+    "chalk-rainbow": "^1.0.0",
+    "figlet": "^1.2.0",
     "mocha": "^5.2.0",
     "moment": "^2.22.1",
+    "node-console-input": "^1.1.1",
+    "readline-sync": "^1.4.9",
     "winston": "^2.4.2",
     "xo": "^0.21.1"
   },

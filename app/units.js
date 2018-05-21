@@ -18,6 +18,34 @@ class Units {
     return this.dead_;
   }
 
+  get HP() {
+    return 0;
+  }
+
+  get attackSpeed() {
+    return 0;
+  }
+
+  get attackValue() {
+    return 0;
+  }
+
+  static get cornCost() {
+    return 0;
+  }
+
+  static get goldCost() {
+    return 0;
+  }
+
+  set wounded(value) {
+    this.wounded_ = value;
+  }
+
+  set dead(value) {
+    this.dead_ = value;
+  }
+
   set defensing(value) {
     this.defensing_ = value;
   }
@@ -27,18 +55,29 @@ class Units {
       this.dead_ = true;
     }, 100 * process.env.TIME_FACTOR);
   }
+
+  toString() {
+    let text = '';
+    if (this.isDefensing()) {
+      text += ' D ';
+    }
+    if (this.isWounded()) {
+      text += ' W ';
+    }
+    return text;
+  }
 }
 
 class Rider extends Units {
-  static get HP() {
+  get HP() {
     return 25;
   }
 
-  static get attackSpeed() {
+  get attackSpeed() {
     return 2;
   }
 
-  static get attackValue() {
+  get attackValue() {
     return 2;
   }
 
@@ -49,18 +88,25 @@ class Rider extends Units {
   static get goldCost() {
     return 20;
   }
+
+  toString() {
+    let text = String('Rider ' + Rider.HP + '\\' + Rider.attackValue + '\\' +
+      Rider.attackSpeed);
+    text += super.toString();
+    return text;
+  }
 }
 
 class LightSoldier extends Units {
-  static get HP() {
+  get HP() {
     return 15;
   }
 
-  static get attackSpeed() {
+  get attackSpeed() {
     return 1;
   }
 
-  static get attackValue() {
+  get attackValue() {
     return 3;
   }
 
@@ -71,18 +117,25 @@ class LightSoldier extends Units {
   static get goldCost() {
     return 0;
   }
+
+  toString() {
+    let text = String('Light Soldier ' + LightSoldier.HP + '\\' +
+      LightSoldier.attackValue + '\\' + LightSoldier.attackSpeed);
+    text += super.toString();
+    return text;
+  }
 }
 
 class HeavySoldier extends Units {
-  static get HP() {
+  get HP() {
     return 20;
   }
 
-  static get attackSpeed() {
-    return 3;
+  get attackSpeed() {
+    return 5;
   }
 
-  static get attackValue() {
+  get attackValue() {
     return 1;
   }
 
@@ -93,6 +146,13 @@ class HeavySoldier extends Units {
   static get goldCost() {
     return 10;
   }
+
+  toString() {
+    let text = String('Heavy Soldier ' + HeavySoldier.HP + '\\' +
+      HeavySoldier.attackValue + '\\' + HeavySoldier.attackSpeed);
+    text += super.toString();
+    return text;
+  }
 }
 
-module.exports = {Units, Rider, LightSoldier, HeavySoldier};
+module.exports = {Rider, LightSoldier, HeavySoldier};
