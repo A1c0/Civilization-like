@@ -4,9 +4,9 @@
 ## Welcome to the project page for our civ-like game ##
 
 ### Team : ###
-* Alexandre Contassot @alexConts
-* Nathan Laporte @Sysmetryx
-* Raphael Pastre @Raphiqui
+* Alexandre Contassot [@alexConts][@alexConts]
+* Nathan Laporte [@Sysmetryx][@Sysmetryx]
+* Raphael Pastre [@Raphiqui][@Raphiqui]
 
 ### **Summary** ###
 
@@ -15,23 +15,20 @@
     a. [Dependencies][Dependencies]
     b. [Environment variables][Environment]
 3. [Gameplay][Gameplay]
-    a. [Divinity][Divinity]
-    b. [Polis][Environment]
-    c. [Divinity][Divinity]
-    d. [Environment variables][Environment]
-    e. [Divinity][Divinity]
-    f. [Environment variables][Environment]
-4. Tips
-5. What's next ?
+    a. [The divinity][Divinity]
+    b. [The polis][Polis]
+    c. [The units][Units]
+4 - [More][More]
+
 
 ### 1 - Goal
 
-The game should consist in a solo mode. the player controls a city in ancient Greece. Each city is linked to a Divinity and has three main ressources :
+The game should consist in a multiplayer mode. the different player controls a city in ancient Greece. Each city is linked to a Divinity and has two main ressources :
 ##
 * Corn
 * Gold
-* Soldiers
 ##
+Moreover, each city has units that will be used for attack and defense.
 
 Each Divinity needs its followers to make offerings, which can contains either **gold**, **corn**, or both.
 Please your God, and it will act kindly towards your city.
@@ -42,13 +39,17 @@ If you fail to please your god, it will wrath the earth.
 
 ### 2 - Setup Guide
 
-    ## a - Dependencies :
-        the following dependencies are used. They can be installed by using yarn or npm :
-    *In progress*
-    
-    ## b - Environment variables
-        The program uses dotenv, and need an *.env* file at the root of the project. Here is an exemple :
-        *In Progress*
+## a - Install :
+the following dependencies are used. They can be installed by using yarn or npm :
+*In progress*
+
+## b - Play :
+the following dependencies are used. They can be installed by using yarn or npm :
+*In progress*
+
+## c - Environment variables
+    The program uses dotenv, and need an *.env* file at the root of the project. Here is an exemple :
+    *In Progress*
         
 ### 3 - Gameplay
 
