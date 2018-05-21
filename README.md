@@ -12,7 +12,8 @@
 
 1. [Goal][Goal]
 2. [Setup Guide][Setup]
-    a. [Dependencies][Dependencies]
+    a. [Install][Install]
+    b. [Play][Play]
     b. [Environment variables][Environment]
 3. [Gameplay][Gameplay]
     a. [The divinity][Divinity]
@@ -39,15 +40,15 @@ If you fail to please your god, it will wrath the earth.
 
 ### 2 - Setup Guide
 
-## a - Install :
+#### a - Install :
 the following dependencies are used. They can be installed by using yarn or npm :
 *In progress*
 
-## b - Play :
+#### b - Play :
 the following dependencies are used. They can be installed by using yarn or npm :
 *In progress*
 
-## c - Environment variables
+#### c - Environment variables
     The program uses dotenv, and need an *.env* file at the root of the project. Here is an exemple :
     *In Progress*
         
@@ -62,14 +63,17 @@ the following dependencies are used. They can be installed by using yarn or npm 
 ### 4 - What's next ? ###
 
 *In Progress*
+
+
 [@alexConts]: https://github.com/alexConts
 [@Sysmetryx]: https://github.com/Sysmetryx
 [@Raphiqui]: https://github.com/Raphiqui
-[Goal]: 
-[Setup]: 
-[Dependencies]: 
-[Environment]: 
-[Gameplay]: 
-[Divinity]: 
+[Goal]: https://github.com/alexConts/Civilization-like#1---goal
+[Setup]: https://github.com/alexConts/Civilization-like#2---setup-guide
+[Install]: https://github.com/alexConts/Civilization-like#a---install-
+[Play]: https://github.com/alexConts/Civilization-like#b---play-
+[Environment]: https://github.com/alexConts/Civilization-like#c---environment-variables
+[Gameplay]: https://github.com/alexConts/Civilization-like#3---gameplay
+[Divinity]: https://github.com/alexConts/Civilization-like#3---gameplay
 [Polis]: 
 [Units]: 
