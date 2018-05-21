@@ -62,3 +62,14 @@ the following dependencies are used. They can be installed by using yarn or npm 
 ### 4 - What's next ? ###
 
 *In Progress*
+[@alexConts]: https://github.com/alexConts
+[@Sysmetryx]: https://github.com/Sysmetryx
+[@Raphiqui]: https://github.com/Raphiqui
+[Goal]: 
+[Setup]: 
+[Dependencies]: 
+[Environment]: 
+[Gameplay]: 
+[Divinity]: 
+[Polis]: 
+[Units]: 
