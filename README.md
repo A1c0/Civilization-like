@@ -8,18 +8,21 @@
 * Nathan Laporte [@Sysmetryx][@Sysmetryx]
 * Raphael Pastre [@Raphiqui][@Raphiqui]
 
+![img1](http://www.image-heberg.fr/files/15270106451558820285.png)
+![img2](http://www.image-heberg.fr/files/1527010731241712782.png)
+
 ### **Summary** ###
 
 1. [Goal][Goal]
 2. [Setup Guide][Setup]
-    a. [Install][Install]
-    b. [Play][Play]
-    b. [Environment variables][Environment]
+    1. [Install][Install]
+    2. [Play][Play]
+    3. [Environment variables][Environment]
 3. [Gameplay][Gameplay]
-    a. [The divinity][Divinity]
-    b. [The polis][Polis]
-    c. [The units][Units]
-4 - [More][More]
+    1. [The divinity][Divinity]
+    2. [The polis][Polis]
+    3. [The units][Units]
+4. [More][More]
 
 
 ### 1 - Goal
@@ -40,29 +43,27 @@ If you fail to please your god, it will wrath the earth.
 
 ### 2 - Setup Guide
 
-#### a - Install :
+#### I. Install :
 the following dependencies are used. They can be installed by using yarn or npm :
 *In progress*
 
-#### b - Play :
+#### II. Play :
 the following dependencies are used. They can be installed by using yarn or npm :
 *In progress*
 
-#### c - Environment variables
+#### III. Environment variables
     The program uses dotenv, and need an *.env* file at the root of the project. Here is an exemple :
     *In Progress*
         
-### 3 - Gameplay
+### 3. Gameplay
 
-*In Progress*
+#### I. The Divinity
 
-### 4 - Tips
+#### II. The Polis
 
-*In Progress*
+#### III. The Units
 
-### 4 - What's next ? ###
-
-*In Progress*
+### 4. More
 
 
 [@alexConts]: https://github.com/alexConts
@@ -74,6 +75,6 @@ the following dependencies are used. They can be installed by using yarn or npm 
 [Play]: https://github.com/alexConts/Civilization-like#b---play-
 [Environment]: https://github.com/alexConts/Civilization-like#c---environment-variables
 [Gameplay]: https://github.com/alexConts/Civilization-like#3---gameplay
-[Divinity]: https://github.com/alexConts/Civilization-like#3---gameplay
+[Divinity]:
 [Polis]: 
 [Units]: 

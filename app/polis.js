@@ -271,15 +271,15 @@ class Polis {
   }
 
   toString() {
-    let text = 'Cité: ' + this.name + ', Divitinté$: ' +
+    let text = 'Polis: ' + this.name + ', Divinity: ' +
       this.polisDivinity_.name + ', (' + this.position_.x + ', ' +
       this.position_.y + ')\n === GOLD: ' + this.gold_ + ', CORN: ' +
       this.corn_ + ' ===';
 
-    text += `\nUnités de la cité : `;
+    text += `\nPolis's Units : `;
     this.unitList.forEach(unit => {
       if (!unit.isDead()) {
-        text += unit.toString() + '\n';
+        text += unit.toString() + '| ';
       }
     });
     return text;

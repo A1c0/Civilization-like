@@ -90,8 +90,8 @@ class Rider extends Units {
   }
 
   toString() {
-    let text = String('Rider ' + Rider.HP + '\\' + Rider.attackValue + '\\' +
-      Rider.attackSpeed);
+    let text = String('Rider ' + this.HP + '\\' + this.attackValue + '\\' +
+      this.attackSpeed);
     text += super.toString();
     return text;
   }
@@ -119,8 +119,8 @@ class LightSoldier extends Units {
   }
 
   toString() {
-    let text = String('Light Soldier ' + LightSoldier.HP + '\\' +
-      LightSoldier.attackValue + '\\' + LightSoldier.attackSpeed);
+    let text = String('Light Soldier ' + this.HP + '\\' +
+      this.attackValue + '\\' + this.attackSpeed);
     text += super.toString();
     return text;
   }
@@ -148,8 +148,8 @@ class HeavySoldier extends Units {
   }
 
   toString() {
-    let text = String('Heavy Soldier ' + HeavySoldier.HP + '\\' +
-      HeavySoldier.attackValue + '\\' + HeavySoldier.attackSpeed);
+    let text = String('Heavy Soldier ' + this.HP + '\\' +
+      this.attackValue + '\\' + this.attackSpeed);
     text += super.toString();
     return text;
   }
