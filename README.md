@@ -74,7 +74,11 @@ DAILY_EARNING_GOLD = 1
 #### III. The Units
 
 ### 4. More
-Our code is xo verified but you can check this with this commande:
+We use TDD to realise our project. You can check this out :
+```shell
+yarn test
+```
+Our code also is xo verified but you can check this out  with this commande:
 ```shell
 xo
 ```
