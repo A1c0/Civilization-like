@@ -44,17 +44,27 @@ If you fail to please your god, it will wrath the earth.
 ### 2 - Setup Guide
 
 #### I. Install :
-the following dependencies are used. They can be installed by using yarn or npm :
-*In progress*
+To install this game:
+```shell
+git clone https://github.com/alexConts/Civilization-like.git
+cd Civilization-like
+yarn
+```
 
 #### II. Play :
-the following dependencies are used. They can be installed by using yarn or npm :
-*In progress*
+```shell
+yarn start
+```
 
 #### III. Environment variables
-    The program uses dotenv, and need an *.env* file at the root of the project. Here is an exemple :
-    *In Progress*
-        
+The program uses dotenv, and need an *.env* file at the root of the project. Here is an exemple :
+```dotenv
+TIME_FACTOR = 1
+INTEREST = 0.1
+DAILY_EARNING_CORN = 100
+DAILY_EARNING_GOLD = 1
+```
+
 ### 3. Gameplay
 
 #### I. The Divinity
@@ -64,6 +74,10 @@ the following dependencies are used. They can be installed by using yarn or npm 
 #### III. The Units
 
 ### 4. More
+Our code is xo verified but you can check this with this commande:
+```shell
+xo
+```
 
 
 [@alexConts]: https://github.com/alexConts
@@ -75,6 +89,7 @@ the following dependencies are used. They can be installed by using yarn or npm 
 [Play]: https://github.com/alexConts/Civilization-like#b---play-
 [Environment]: https://github.com/alexConts/Civilization-like#c---environment-variables
 [Gameplay]: https://github.com/alexConts/Civilization-like#3---gameplay
-[Divinity]:
-[Polis]: 
-[Units]: 
+[Divinity]: https://github.com/alexConts/Civilization-like#i-the-divinity
+[Polis]: https://github.com/alexConts/Civilization-like#ii-the-polis
+[Units]: https://github.com/alexConts/Civilization-like#iii-the-units
+[More]: https://github.com/alexConts/Civilization-like#4-more
