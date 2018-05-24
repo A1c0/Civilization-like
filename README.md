@@ -72,17 +72,17 @@ A divinity coud help th city with different action. Indeed, it could by flavor, 
 
 #### II. The Polis
 Each player have his own city where he could :
-    * buy different type of units
-    * put some of them in defense
-    * to a trade with another city to earn corns and golds
-    *  launch an attack to another city and maybe win 70% of its ressources
-    * sell corn to earn gold and vice versa
+* buy different type of units
+* put some of them in defense
+* to a trade with another city to earn corns and golds
+*  launch an attack to another city and maybe win 70% of its ressources
+* sell corn to earn gold and vice versa
 
 #### III. The Units
 There are three types of units:
-    * Rider
-    * Light Soldier
-    * Heavy Soldier
+* Rider
+* Light Soldier
+* Heavy Soldier
 Each unit have its own attack value, attack speed and HP. The cost of each kind of units is not the same.
 
 ### 4. More
